@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy 21st Birthday, Subarna | To My Sonu Baby ✨</title>
+  <meta name="description" content="A handcrafted 21st birthday surprise and love letter vault across the miles for Subarna Sultana from Erfan." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>" />
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Caveat:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- Background Celestial Stardust & Firefly Canvas -->
+  <canvas id="celestial-canvas"></canvas>
+
+  <!-- ==========================================================================
+       GATEKEEPER QUIZ OVERLAY (Erfan's Handwritten Test)
+       ========================================================================== -->
+  <div id="gatekeeper-overlay" role="dialog" aria-modal="true" aria-label="Entrance Quiz">
+    <div class="gatekeeper-card">
+      <div class="quiz-step-dots">
+        <div class="quiz-dot active"></div>
+        <div class="quiz-dot"></div>
+        <div class="quiz-dot"></div>
+      </div>
+      <span class="quiz-eyebrow" id="quiz-eyebrow-text">Question 01 of 03</span>
+      <h2 class="quiz-question" id="quiz-question-text">Do I (Erfan) love you?</h2>
+
+      <div class="quiz-options-container" id="quiz-options-container">
+        <!-- Rendered by js/main.js -->
+      </div>
+
+      <div class="quiz-toast-feedback" id="quiz-toast"></div>
+    </div>
+  </div>
+
+  <!-- Ambient Song Toggle ("Dooron Dooron") -->
+  <button id="ambient-audio-toggle" class="ambient-pill" aria-label="Toggle Dooron Dooron Song">
+    <div class="music-bars">
+      <div class="music-bar"></div>
+      <div class="music-bar"></div>
+      <div class="music-bar"></div>
+    </div>
+    <span class="pill-text">Dooron Dooron ♫</span>
+  </button>
+
+
+  <!-- Main Story Content Container -->
+  <main class="story-wrapper">
+
+    <!-- ==========================================================================
+         ACT 0: The Midnight Gateway & Countdown
+         ========================================================================== -->
+    <section class="act-gateway">
+      <div class="milestone-badge">
+        <span>✨ Milestone 21</span>
+        <span>•</span>
+        <span>October 23, 2026</span>
+      </div>
+
+      <h1 class="gateway-title">Happy 21st Birthday,<br />Subarna Sultana</h1>
+      
+      <p class="gateway-subtitle">
+        A galaxy of love, cherished promises, and handwritten letters sent across every single mile to my one and only Sonu baby.
+      </p>
+
+      <!-- Live Midnight Countdown -->
+      <div class="countdown-container" id="midnight-countdown" aria-label="Countdown to Midnight October 23rd">
+        <div class="countdown-box">
+          <div class="countdown-num" id="count-days">00</div>
+          <div class="countdown-label">Days</div>
+        </div>
+        <div class="countdown-box">
+          <div class="countdown-num" id="count-hours">00</div>
+          <div class="countdown-label">Hours</div>
+        </div>
+        <div class="countdown-box">
+          <div class="countdown-num" id="count-mins">00</div>
+          <div class="countdown-label">Mins</div>
+        </div>
+        <div class="countdown-box">
+          <div class="countdown-num" id="count-secs">00</div>
+          <div class="countdown-label">Secs</div>
+        </div>
+      </div>
+
+      <!-- Interactive Wax Seal Envelope Opener -->
+      <div class="envelope-interactive" id="interactive-envelope" role="button" tabindex="0" title="Click to open birthday journey">
+        <div class="envelope-flap"></div>
+        <div class="wax-seal">S</div>
+        <span class="envelope-hint">Tap Wax Seal to Open</span>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CHAPTERS FLOW (Progressively Disclosed)
+         ========================================================================== -->
+    <div class="chapters-flow" id="chapters-container" style="display: none;">
+
+      <!-- Chapter 1: The Pet Names Garden -->
+      <section class="chapter-section" id="chapter-nicknames">
+        <div class="chapter-header">
+          <span class="chapter-tag">Chapter 01 • My Whole World</span>
+          <h2 class="chapter-title">The Names I Whisper With All My Heart</h2>
+          <p class="chapter-subtitle">
+            To the world you are Subarna, but to my heart you are every sweet nickname in existence. Tap each one to hear what it means to me:
+          </p>
+        </div>
+
+        <div class="nickname-chips-container">
+          <button class="nickname-chip active" data-name="Sonu">Sonu</button>
+          <button class="nickname-chip" data-name="Baby">Baby</button>
+          <button class="nickname-chip" data-name="Puchu">Puchu</button>
+          <button class="nickname-chip" data-name="Sonu baby">Sonu baby</button>
+        </div>
+
+        <div class="nickname-toast" id="nickname-toast-message">
+          “My quiet warmth, my steady light in every dark room.”
+        </div>
+      </section>
+
+      <!-- Chapter 2: The Long Distance Midnight Letter (Concise & Deep) -->
+      <section class="chapter-section" id="chapter-distance-letter">
+        <div class="chapter-header">
+          <span class="chapter-tag">Chapter 02 • Across The Miles</span>
+          <h2 class="chapter-title">Wishing I Was Holding Your Hand Tonight</h2>
+          <p class="chapter-subtitle">
+            Because I cannot be physically right next to you at midnight, this letter travels across the distance to wrap around your heart.
+          </p>
+        </div>
+
+        <article class="letter-parchment">
+          <div class="letter-date">October 23, 2026 • Midnight</div>
+          <div class="letter-salutation">My Dearest Subarna, My Sonu Baby,</div>
+
+          <div class="letter-body">
+            <p>
+              Happy 21st Birthday, my love.
+            </p>
+            <p>
+              Tonight, as the clock turns twelve and welcomes your twenty-first year, my heart aches with a sweetness words can barely capture. I wish more than anything that I was standing right in front of you tonight—holding your hands, looking into your eyes, and whispering <em>"Happy Birthday, Puchu"</em> before kissing your forehead.
+            </p>
+            <p>
+              Being far apart hurts, but even across all these miles, there isn't a single inch of distance between our souls. When I close my eyes, I feel you right here. I hear your soft laugh, and I'm reminded that distance is only temporary, but what we share is built for lifetimes.
+            </p>
+            <p>
+              Twenty-one is a magnificent milestone, Sonu. You carry so much grace, kindness, and light within you. Being loved by you is the greatest gift of my life.
+            </p>
+            <p>
+              Blow out your candles tonight knowing that every single prayer I whisper is for your peace, your happiness, and our future together.
+            </p>
+          </div>
+
+          <div class="letter-signoff">
+            Always and forever yours,<br />
+            <div class="letter-signature">Erfan</div>
+          </div>
+        </article>
+
+        <div class="copy-draft-bar">
+          <div class="copy-draft-info">
+            ✍️ <strong>For Erfan:</strong> Ready to handwrite this? Click below to copy the concise draft text.
+          </div>
+          <button class="btn-luxury" onclick="copyLetterText(2)">
+            📋 Copy Letter to Handwrite
+          </button>
+        </div>
+      </section>
+
+      <!-- Chapter 3: An Artist's Sketch (Erfan's Drawing of Subarna) -->
+      <section class="chapter-section" id="chapter-drawing">
+        <div class="chapter-header">
+          <span class="chapter-tag">Chapter 03 • Through My Eyes</span>
+          <h2 class="chapter-title">A Sketch of My Queen</h2>
+          <p class="chapter-subtitle">
+            Drawn by my own hands, stroke by stroke, trying to capture just a fraction of the beauty I see in you every day.
+          </p>
+        </div>
+
+        <div class="easel-showcase">
+          <div class="easel-frame" onclick="openPhotoModal('assets/drawing_erfan.jpg', 'Drawn with pure devotion by Erfan ❤️')">
+            <img src="assets/drawing_erfan.jpg" alt="Erfan's Hand Drawing of Subarna" loading="lazy" />
+          </div>
+          <p class="easel-caption">
+            “No artist or canvas could ever fully capture how gorgeous you are, Puchu, but every line here was drawn with my whole heart.”
+          </p>
+        </div>
+      </section>
+
+      <!-- Chapter 4: Subarna's Photo Gallery (12 Photos) -->
+      <section class="chapter-section" id="chapter-photo-gallery">
+        <div class="chapter-header">
+          <span class="chapter-tag">Chapter 04 • Moments in Starlight</span>
+          <h2 class="chapter-title">My Favorite Views in the Universe</h2>
+          <p class="chapter-subtitle">
+            Twelve polaroid moments of the girl who makes my world spin. Tap any photo to see it up close.
+          </p>
+        </div>
+
+        <div class="photo-gallery-grid" id="photo-gallery-grid">
+          <!-- Populated by js/main.js -->
+        </div>
+      </section>
+
+      <!-- Chapter 5: The 3 Handwritten Letters Vault -->
+      <section class="chapter-section" id="chapter-letters-vault">
+        <div class="chapter-header">
+          <span class="chapter-tag">Chapter 05 • The Keepers of Our Love</span>
+          <h2 class="chapter-title">The Handwritten Letters Vault</h2>
+          <p class="chapter-subtitle">
+            Three real handwritten letters penned with devotion by Erfan—including our Cuppycake song, My Whole Universe, and Our Sacred Oaths.
+          </p>
+        </div>
+
+        <div class="letters-grid" id="letters-vault-grid">
+          <!-- Populated by js/letters.js with the 3 letters -->
+        </div>
+      </section>
+
+      <!-- Chapter 6: 21 Reasons Why You Are My World -->
+      <section class="chapter-section" id="chapter-reasons">
+        <div class="chapter-header">
+          <span class="chapter-tag">Chapter 06 • 21 Years of Magic</span>
+          <h2 class="chapter-title">21 Reasons Why You Are My World</h2>
+          <p class="chapter-subtitle">
+            Twenty-one cards for twenty-one incredible years. Tap each card to reveal why you hold my whole heart.
+          </p>
+        </div>
+
+        <div class="reasons-grid" id="reasons-cards-grid">
+          <!-- Populated by js/main.js -->
+        </div>
+      </section>
+
+      <!-- Chapter 7: The Midnight Birthday Cake Ceremony -->
+      <section class="chapter-section" id="chapter-cake-ceremony">
+        <div class="chapter-header">
+          <span class="chapter-tag">Chapter 07 • The Midnight Ritual</span>
+          <h2 class="chapter-title">Make a Wish, Sonu Baby 🎂</h2>
+          <p class="chapter-subtitle">
+            Close your eyes, hold your biggest dream in your heart, and blow out the candles.
+          </p>
+        </div>
+
+        <div class="cake-stage">
+          <div class="cake-visual-wrap">
+            <div class="cake-plate"></div>
+            <div class="cake-tier-bottom">
+              <div class="cake-frosting"></div>
+            </div>
+            <div class="cake-tier-top">
+              <div class="cake-frosting"></div>
+            </div>
+            <div class="candles-row">
+              <div class="candle-item">
+                <div class="candle-wick"></div>
+                <div class="candle-flame"></div>
+                <div class="candle-smoke"></div>
+              </div>
+              <div class="candle-item">
+                <div class="candle-wick"></div>
+                <div class="candle-flame"></div>
+                <div class="candle-smoke"></div>
+              </div>
+              <div class="candle-item">
+                <div class="candle-wick"></div>
+                <div class="candle-flame"></div>
+                <div class="candle-smoke"></div>
+              </div>
+            </div>
+          </div>
+
+          <p class="wish-instruction">Tap the flames or press the button below:</p>
+
+          <button id="blow-candles-btn" class="btn-luxury" style="padding: 14px 34px; font-size: 1.1rem;">
+            🎂 Make a Wish & Blow The Candles
+          </button>
+
+          <!-- Celebratory Banner After Blow -->
+          <div id="celebration-banner" class="birthday-celebration-banner">
+            <h2 class="celebration-title">🎉 Happy 21st Birthday, Subarna! 🎉</h2>
+            <p style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--gold-primary); max-width: 600px; margin: 0 auto; line-height: 1.6;">
+              May every single prayer you made tonight come true. You are my greatest blessing, my sweetest comfort, and my forever home. I love you so much, Sonu baby! ❤️
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="story-footer">
+      <p>Handcrafted with endless devotion for Subarna Sultana <span class="heart-pulse">❤️</span> by Erfan</p>
+      <p style="font-size: 0.85rem; margin-top: 8px; color: var(--text-dim);">October 23, 2026 • Forever & Always</p>
+    </footer>
+
+  </main>
+
+  <!-- ==========================================================================
+       MODAL: Letter Lightbox Viewer
+       ========================================================================== -->
+  <div id="letter-modal" class="letter-modal-overlay" role="dialog" aria-modal="true" aria-label="Letter Viewer">
+    <div class="letter-modal-content">
+      <button class="modal-close-btn" onclick="closeLetterModal()" aria-label="Close letter viewer">&times;</button>
+      <div id="modal-letter-body"></div>
+    </div>
+  </div>
+
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/letters.js"></script>
+  <script src="js/cake.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

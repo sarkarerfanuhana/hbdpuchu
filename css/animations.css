@@ -1,0 +1,97 @@
+/* ==========================================================================
+   Subarna's 21st Birthday Experience - Dynamic Micro-Animations
+   Smooth, organic, celebratory keyframes
+   ========================================================================== */
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(247, 215, 148, 0.15);
+    border-color: rgba(247, 215, 148, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(247, 215, 148, 0.35);
+    border-color: rgba(247, 215, 148, 0.65);
+  }
+}
+
+@keyframes soundBar {
+  0% { height: 4px; }
+  100% { height: 14px; }
+}
+
+@keyframes flicker {
+  0% {
+    transform: translateX(-50%) rotate(-1deg) scale(1);
+    filter: drop-shadow(0 0 8px #ff9f43);
+  }
+  25% {
+    transform: translateX(-50%) rotate(2deg) scale(1.05);
+    filter: drop-shadow(0 0 12px #ff793f);
+  }
+  50% {
+    transform: translateX(-50%) rotate(-2deg) scale(0.96);
+    filter: drop-shadow(0 0 7px #ff9f43);
+  }
+  75% {
+    transform: translateX(-50%) rotate(1deg) scale(1.03);
+    filter: drop-shadow(0 0 14px #ff5252);
+  }
+  100% {
+    transform: translateX(-50%) rotate(-1deg) scale(1);
+    filter: drop-shadow(0 0 8px #ff9f43);
+  }
+}
+
+@keyframes smokeRise {
+  0% {
+    opacity: 0.8;
+    transform: translateX(-50%) translateY(0) scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-40%) translateY(-25px) scale(2);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-60%) translateY(-50px) scale(3.5);
+  }
+}
+
+@keyframes heartBeat {
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.15); }
+  40% { transform: scale(0.98); }
+  60% { transform: scale(1.12); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Stardust & Particle canvas styling */
+.confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1001;
+}
