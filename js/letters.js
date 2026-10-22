@@ -82,11 +82,8 @@ function renderLettersVault() {
           </div>
         </div>
         <div style="display:flex; gap: 8px; margin-top: 10px;">
-          <button class="btn-luxury" style="flex: 1; padding: 10px 14px; font-size: 0.88rem;" onclick="openLetterModal(${letter.id})">
+          <button class="btn-luxury" style="width: 100%; padding: 11px 16px; font-size: 0.92rem;" onclick="openLetterModal(${letter.id})">
             📖 Read Handwritten Letter
-          </button>
-          <button class="btn-outline" style="padding: 10px 14px; font-size: 0.85rem;" title="Copy letter text" onclick="copyLetterText(${letter.id})">
-            📋 Copy
           </button>
         </div>
       </div>
@@ -112,8 +109,7 @@ function openLetterModal(id) {
       </div>
 
       <div style="margin-top: 20px; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
-        <a href="${letter.image}" target="_blank" class="btn-outline">🔍 View Original Size</a>
-        <button class="btn-luxury" onclick="copyLetterText(${letter.id})">📋 Copy Letter Text</button>
+        <a href="${letter.image}" target="_blank" class="btn-luxury">🔍 View Full Size</a>
       </div>
     </div>
   `;
